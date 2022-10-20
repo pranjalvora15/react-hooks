@@ -33,6 +33,47 @@ const Reducer = () => {
           </tr>
         </tbody>
       </table>
+      <br />
+      <hr />
+      <br />
+      <p>
+        Read useState vs useReducer or when to use what after understanding
+        useReducer
+      </p>
+      <table>
+        <thead>
+          <th scope="col">Scenario</th>
+          <th scope="col">useState</th>
+          <th scope="col">useReducer</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="bold">Type of State</td>
+            <td>Number,String,Boolean</td>
+            <td>Object or Array</td>
+          </tr>
+          <tr>
+            <td className="bold">Number of state transition</td>
+            <td>One or two</td>
+            <td>Too Many</td>
+          </tr>
+          <tr>
+            <td className="bold">Related state transitions? </td>
+            <td>No</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td className="bold">Business logic </td>
+            <td>Used when there is no business logic</td>
+            <td>Used when there is complex business logic</td>
+          </tr>
+          <tr>
+            <td className="bold">Local state vs global state </td>
+            <td>More preferable when one have to deal with local state </td>
+            <td>More preferable when have to deal with global state</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };
